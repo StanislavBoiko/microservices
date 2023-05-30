@@ -1,0 +1,10 @@
+postgresql:
+  fullnameOverride: postgres
+  auth:
+    database: "db"
+    username: "admin"
+    password: "admin"
+  primary:
+    persistence:
+      size: 2Gi
+      mountPath: /var/lib/postgresql/data

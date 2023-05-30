@@ -1,0 +1,18 @@
+replicaCount: 1
+
+nameOverride: ""
+
+image:
+  name: ""
+  tag: ""
+
+service:
+  ports: []
+
+
+
+configs: {}
+
+secrets: {}
+
+common: {}

@@ -1,0 +1,16 @@
+apiVersion: v2
+type: application
+version: 0.2.0
+name: lab5
+appVersion: "0.1"
+description: "Lab 5"
+dependencies:
+  - name: postgresql
+    version: 12.2.7
+    repository: https://charts.bitnami.com/bitnami
+  - name: common
+    version: 0.1.0
+    repository: file://charts/common
+  - name: rabbitmq
+    version: 11.14.3
+    repository: https://charts.bitnami.com/bitnami  

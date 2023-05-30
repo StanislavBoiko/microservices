@@ -1,0 +1,28 @@
+﻿@model IndexVM;
+@{
+    
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Users</h1>
+    @foreach (User u in Model.Users)
+    {
+        {
+            <p>ID: @u.Id</p>
+            <p>Name: @u.Name</p>
+            <p>Surname: @u.Surname</p>
+            <p>Address: @u.Address</p>
+        }
+    }
+    <a asp-controller="User" asp-action="Create" class="btn btn-primary">Create new user</a>
+    <hr/>
+    <h1 class="display-4">Products</h1>
+    @foreach (Product p in Model.Products)
+                {
+                    <p>ID: @p.Id</p>
+                    <p>Name: @p.Name</p>
+                    <p>Price: @p.Price</p>
+                }
+    <a asp-controller="Product" asp-action="Create" class="btn btn-primary">Create new product</a>
+</div>

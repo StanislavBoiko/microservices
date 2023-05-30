@@ -1,0 +1,10 @@
+apiVersion: v2
+type: application
+version: 0.2.0
+name: helm-lab3
+appVersion: "0.1"
+description: "Lab 3 using helm"
+dependencies:
+  - name: postgresql
+    version: 12.2.7
+    repository: https://charts.bitnami.com/bitnami
