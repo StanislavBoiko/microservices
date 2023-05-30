@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: product-service-deployment
+  name: product-service-messaging-deployment
 spec:
   replicas: 1                      # кількість екземплярів Pod, що буде створено цим Deployment
   selector:
     matchLabels:
-      app: product-service               # селектор по якому Deployment зв'язаний з Pod
+      app: product-service-messaging               # селектор по якому Deployment зв'язаний з Pod
   template:
     metadata:
       labels:
-        app: product-service               # мітка Pod по якому вона буде зв'язана з Deployment та Service
+        app: product-service-messaging               # мітка Pod по якому вона буде зв'язана з Deployment та Service
     spec:
       initContainers:
         - name: run-migrations-product
-          image: smoothoperator228/migrations:latest
+          image: smoothoperator228/migrations-messaging:latest
           command: ["migrate", "-path", "/migrations", "-database", "$(POSTGRESQL_URL)", "goto", "$(VERSION)"]
           env:
             - name: POSTGRESQL_URL
@@ -22,13 +22,13 @@ spec:
             - name: VERSION
               value: "000001"
       containers:
-        - image: smoothoperator228/productservice:latest       # образ Docker
+        - image: smoothoperator228/productservice-messaging:latest       # образ Docker
           imagePullPolicy: IfNotPresent
-          name: product-service           # ім'я контейнеру
+          name: product-service-messaging          # ім'я контейнеру
           ports:
             - containerPort: 8080  # порт по якому можна звертатись до поди
           envFrom:
             - configMapRef:
-                name: product-service-config
+                name: product-service-messaging-config
             - secretRef:
-                name: product-service-secret
+                name: product-service-messaging-secret

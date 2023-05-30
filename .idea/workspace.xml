@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6f557d-9f77-4b88-b12a-9b8dc3d2d1c7" name="Changes" comment="" />
+    <list default="true" id="1f6f557d-9f77-4b88-b12a-9b8dc3d2d1c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/services/ProductService/src/main/java/com/example/productservice/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/services/ProductService/src/main/java/com/example/productservice/controllers/ProductController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +26,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file://E:/GO" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
@@ -47,6 +53,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2QRZ00iDyXQf0XTv6GTSbpZEBhN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,7 +143,7 @@
       <workItem from="1685432787482" duration="125000" />
       <workItem from="1685433749423" duration="136000" />
       <workItem from="1685435012268" duration="1487000" />
-      <workItem from="1685440489092" duration="2261000" />
+      <workItem from="1685440489092" duration="2818000" />
     </task>
     <servers />
   </component>

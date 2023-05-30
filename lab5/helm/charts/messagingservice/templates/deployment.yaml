@@ -14,7 +14,7 @@ spec:
     spec:
       initContainers:
         - name: run-migrations-messaging
-          image: smoothoperator228/migrations:latest
+          image: smoothoperator228/migrations-messaging:latest
           command: ["migrate", "-path", "/migrations", "-database", "$(POSTGRESQL_URL)", "goto", "$(VERSION)"]
           env:
             - name: POSTGRESQL_URL

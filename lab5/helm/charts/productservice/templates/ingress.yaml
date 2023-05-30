@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: product-service-ingress
+  name: product-service-messaging-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
@@ -12,6 +12,6 @@ spec:
             pathType: "Prefix"
             backend:
               service:
-                name: product-service-service
+                name: product-service-messaging-service
                 port:
                   number: 80
